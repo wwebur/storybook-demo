@@ -20,9 +20,9 @@ jobs:
 
       - name: Build Storybook
         run: npm run build-storybook
-        
+
       - name: Lost Pixel
-        uses: lost-pixel/lost-pixel-action@v1beta2
+        uses: lost-pixel/lost-pixel-action@v1beta3
         with:
           LOST_PIXEL_URL: ${{ secrets.LOST_PIXEL_URL }}
           LOST_PIXEL_API_KEY: ${{ secrets.LOST_PIXEL_API_KEY }}
@@ -33,5 +33,4 @@ jobs:
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
           S3_BUCKET_NAME: 'lost-pixel'
           S3_BASE_URL: 'https://lost-pixel.fra1.digitaloceanspaces.com'
-        
-        
+
