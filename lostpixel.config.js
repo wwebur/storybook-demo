@@ -1,0 +1,20 @@
+module.exports = {
+  storybookUrl: process.env.STORYBOOK_PATH,
+  shotConcurrency: 10,
+
+  lostPixelProjectId: "lost-pixel-demo",
+  ciBuildId: process.env.GITHUB_RUN_ID,
+  ciBuildNumber: process.env.GITHUB_RUN_NUMBER,
+  repository: process.env.REPOSITORY,
+  commitRef: process.env.COMMIT_REF,
+  commitRefName: process.env.COMMIT_REF,
+  commitHash: process.env.COMMIT_HASH,
+
+  s3: {
+    endPoint: "ams3.digitaloceanspaces.com",
+    accessKey: process.env.S3_ACCESS_KEY,
+    secretKey: process.env.S3_SECRET_KEY,
+    bucketName: "lost-pixel-dimitri-development",
+  },
+
+};
