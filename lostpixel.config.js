@@ -2,7 +2,7 @@ module.exports = {
   storybookUrl: process.env.STORYBOOK_PATH,
   shotConcurrency: 10,
 
-  lostPixelProjectId: "lost-pixel-demo",
+  lostPixelProjectId: "cl205daty03325mybgsut4fhe",
   ciBuildId: process.env.GITHUB_RUN_ID,
   ciBuildNumber: process.env.GITHUB_RUN_NUMBER,
   repository: process.env.REPOSITORY,
