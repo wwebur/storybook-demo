@@ -23,14 +23,6 @@ jobs:
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel-action@v1.2.5
-        with:
-          LOST_PIXEL_URL: ${{ secrets.LOST_PIXEL_URL }}
-          LOST_PIXEL_API_KEY: ${{ secrets.LOST_PIXEL_API_KEY }}
-          LOST_PIXEL_PROJECT_ID: ${{ secrets.LOST_PIXEL_PROJECT_ID }}
-          STORYBOOK_PATH: 'storybook-static'
-          S3_END_POINT: 'ams3.digitaloceanspaces.com'
+        env:
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-          S3_BUCKET_NAME: 'lost-pixel-dimitri-development'
-          S3_BASE_URL: 'https://lost-pixel-dimitri-development.ams3.digitaloceanspaces.com'
-
