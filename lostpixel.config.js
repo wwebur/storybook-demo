@@ -1,5 +1,5 @@
 module.exports = {
-  storybookUrl: process.env.STORYBOOK_PATH,
+  storybookUrl: "storybook-static",
   shotConcurrency: 10,
 
   lostPixelProjectId: "cl205daty03325mybgsut4fhe",
