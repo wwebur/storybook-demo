@@ -6,8 +6,8 @@ module.exports = {
   ciBuildId: process.env.GITHUB_RUN_ID,
   ciBuildNumber: process.env.GITHUB_RUN_NUMBER,
   repository: process.env.REPOSITORY,
-  commitRef: process.env.COMMIT_REF,
-  commitRefName: process.env.COMMIT_REF,
+  commitRef: process.env.GITHUB_REF,
+  commitRefName: process.env.GITHUB_REF_NAME,
   commitHash: process.env.COMMIT_HASH,
 
   s3: {
