@@ -2,7 +2,7 @@ module.exports = {
   storybookUrl: "storybook-static",
   shotConcurrency: 10,
   lostPixelUrl: "https://lp-d.ngrok.io/api/callback",
-  lostPixelProjectId: "cl2pupd030081dnybsndzfflx",
+  lostPixelProjectId: "cl2pvu5ei0082y6ybz477rthh",
   ciBuildId: process.env.GITHUB_RUN_ID,
   ciBuildNumber: process.env.GITHUB_RUN_NUMBER,
   repository: process.env.REPOSITORY,
