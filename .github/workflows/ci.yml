@@ -26,3 +26,7 @@ jobs:
         env:
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: lost-pixel-artefacts
+          path: .lostpixel
