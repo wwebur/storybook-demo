@@ -2,7 +2,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -22,10 +21,8 @@ jobs:
         run: npm run build-storybook
 
       - name: Lost Pixel
-        uses: lost-pixel/lost-pixel-action@v1.7.0
-        env:
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
+        uses: lost-pixel/lost-pixel@next
+
       - uses: actions/upload-artifact@v3
         with:
           name: lost-pixel-artefacts
